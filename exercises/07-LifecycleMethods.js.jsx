@@ -53,12 +53,14 @@ class LifecycleMethodsComponent extends React.Component {
   // This code will be called when the component finishes mounting
   // (so it is visible for a user).
   componentDidMount() {
+    console.log("I'm mounted!");
     // Task 1: Display a message "I'm mounted!" in developer's console when the
     //         component finishes mounting.
     //         Use `console.log` function for it.
   }
 
   componentDidUpdate(prevProps, prevState) {
+    console.log("Updated!");
     // Task 2: Display a message "Updated!" in developer's console
     //         when the component updates.
     //         Here you also need to use the console.log function.
@@ -69,6 +71,7 @@ class LifecycleMethodsComponent extends React.Component {
   }
 
   componentWillUnmount() {
+    console.log("Goodbye, cruel world! :(");
     // Task 3: Display a message "Goodbye, cruel world! :(" in developer's
     //         console when the component unmounts.
     //         In the real world this lifecycle method is often used to
